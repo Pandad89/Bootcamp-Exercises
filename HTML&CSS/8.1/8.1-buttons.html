@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>HTML Boilerplate page</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: cadetblue;
+                text-align: center;
+                padding: 30px;
+            }
+            #flat1 {
+                background: chartreuse;
+                width: 150px;
+                padding: 10px;
+                border: none;
+                font-size: 20px;
+            }
+            #flat1:hover {
+                background: green;
+                width: 150px;
+                padding: 10px;
+                border: none;
+                font-size: 20px;
+            }
+            #flat2 {
+                background: firebrick;
+                width: 100px;
+                padding: 6px;
+                border: none;
+                font-size: 15px;
+            }
+            #flat2:hover {
+                background: red;
+                width: 100px;
+                padding: 6px;
+                border: none;
+                font-size: 15px;
+            }
+            #flat3 {
+                background: royalblue;
+                width: 50px;
+                padding: 5px;
+                border: none;
+                font-size: 12px;
+            }
+            #flat3:hover {
+                background: blue;
+                width: 50px;
+                padding: 5px;
+                border: none;
+                font-size: 12px;
+            }
+            #round1 {
+                background: olivedrab;
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 100px;
+                font-size: 20px;
+            }
+            #round1:hover {
+                background: olive;
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 100px;
+                font-size: 20px;
+            }
+            #round2 {
+                background: orange;
+                width: 100px;
+                padding: 6px;
+                border: none;
+                border-radius: 100px;
+                font-size: 15px;
+            }
+            #round2:hover {
+                background: orangered;
+                width: 100px;
+                padding: 6px;
+                border: none;
+                border-radius: 100px;
+                font-size: 15px;
+            }
+            #round3 {
+                background: darkgrey;
+                width: 50px;
+                padding: 5px;
+                border: none;
+                border-radius: 100px;
+                font-size: 12px;
+            }
+            #round3:hover {
+                background: grey;
+                width: 50px;
+                padding: 5px;
+                border: none;
+                border-radius: 100px;
+                font-size: 12px;
+            }
+            #ghost1 {
+                background: none;
+                width: 150px;
+                padding: 10px;
+                border: 2px solid chartreuse;
+                font-size: 20px;
+                transition: ease-in 0.2s;
+            }
+            #ghost1:hover {
+                background: chartreuse;
+                width: 150px;
+                padding: 10px;
+                border: 2px solid chartreuse;
+                font-size: 20px;
+                transition: ease-in 0.2s;
+            }
+            #ghost2 {
+                background: none;
+                width: 100px;
+                padding: 6px;
+                border: 2px solid firebrick;
+                font-size: 15px;
+                transition: ease-in 0.2s;
+            }
+            #ghost2:hover {
+                background: firebrick;
+                width: 100px;
+                padding: 6px;
+                border: 2px solid firebrick;
+                font-size: 15px;
+                transition: ease-in 0.2s;
+            }
+            #ghost3 {
+                background: none;
+                width: 50px;
+                padding: 5px;
+                border: 2px solid royalblue;
+                font-size: 12px;
+                transition: ease-in 0.2s;
+            }
+            #ghost3:hover {
+                background: royalblue;
+                width: 50px;
+                padding: 5px;
+                border: 2px solid royalblue;
+                font-size: 12px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost1 {
+                background: none;
+                width: 150px;
+                padding: 10px;
+                border: 2px solid olivedrab;
+                border-radius: 100px;
+                font-size: 20px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost1:hover {
+                background: olivedrab;
+                width: 150px;
+                padding: 10px;
+                border: 2px solid olivedrab;
+                font-size: 20px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost2 {
+                background: none;
+                width: 100px;
+                padding: 6px;
+                border: 2px solid orange;
+                border-radius: 100px;
+                font-size: 15px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost2:hover {
+                background: orange;
+                width: 100px;
+                padding: 6px;
+                border: 2px solid orange;
+                border-radius: 100px;
+                font-size: 15px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost3 {
+                background: none;
+                width: 50px;
+                padding: 5px;
+                border: 2px solid darkgrey;
+                border-radius: 100px;
+                font-size: 12px;
+                transition: ease-in 0.2s;
+            }
+            #roundghost3:hover {
+                background: darkgrey;
+                width: 50px;
+                padding: 5px;
+                border: 2px solid darkgrey;
+                border-radius: 100px;
+                font-size: 12px;
+                transition: ease-in 0.2s;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id='buttons' class="buttons">
+            <div id="flat">
+                <h1>Flat</h1>
+                <button id="flat1" class="one">Register</button>
+                <button id="flat2" class="one">Clear</button>
+                <button id="flat3" class="one">Submit</button>
+            </div>           
+            <div id="flat">
+                <h1>Round</h1>
+                <button id="round1" class="two">Register</button>
+                <button id="round2" class="two">Clear</button>
+                <button id="round3" class="two">Submit</button>
+            </div>           
+            <div id="ghost">
+                <h1>Flat</h1>
+                <button id="ghost1" class="three">Register</button>
+                <button id="ghost2" class="three">Clear</button>
+                <button id="ghost3" class="three">Submit</button>
+            </div>           
+            <div id="roundghost">
+                <h1>Round Ghost</h1>
+                <button id="roundghost1" class="four">Register</button>
+                <button id="roundghost2" class="four">Clear</button>
+                <button id="roundghost3" class="four">Submit</button>
+            </div>           
+        </div>
+    </body>
+</html>

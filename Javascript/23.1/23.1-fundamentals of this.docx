@@ -1,0 +1,20 @@
+question 1
+
+the line of code written will point to window object, which is the global scope of the page.
+
+question 2
+
+the system would print out the object information, since the function is within the object's scope
+
+question 3
+
+the system would print out the window object, since the function is within global scope
+
+question 4
+
+the system would print out the window object, since the function is within global scope
+
+
+question 5
+
+the system will print out the info of the query selector before it, since it is an event listener connected to said query selector.

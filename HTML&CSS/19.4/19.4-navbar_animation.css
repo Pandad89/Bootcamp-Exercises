@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 40px;
+    background: cadetblue;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+ul a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    background: cadetblue;
+    display: inline;
+    margin-left: 25px;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+.home {
+    position: absolute;
+    left: 300px;
+}
+.home::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: 55px;
+    left: 150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.home:hover::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: 55px;
+    left: -2px;
+    background: black;
+}
+.home::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: -56px;
+    left: -150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.home:hover::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: -56px;
+    left: -2px;
+    background: black;
+}
+.about {
+    position: absolute;
+    left: calc(447px + 15px);
+}
+.about::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 148px;
+    top: 55px;
+    left: 150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.about:hover::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: 55px;
+    left: -2px;
+    background: black;
+}
+.about::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 148px;
+    top: -56px;
+    left: -150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.about:hover::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 149px;
+    top: -56px;
+    left: -2px;
+    background: black;
+}
+.services {
+    position: absolute;
+    left: calc(608px + 15px);
+}
+.services::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 187px;
+    top: 55px;
+    left: 150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.services:hover::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 187px;
+    top: 55px;
+    left: -2px;
+    background: black;
+}
+.services::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 187px;
+    top: -56px;
+    left: -150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.services:hover::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 187px;
+    top: -56px;
+    left: -2px;
+    background: black;
+}
+.portfolio {
+    position: absolute;
+    left: calc(808px + 15px);
+}
+.portfolio::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 181px;
+    top: 55px;
+    left: 150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.portfolio:hover::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 181px;
+    top: 55px;
+    left: -2px;
+    background: black;
+}
+.portfolio::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 181px;
+    top: -56px;
+    left: -150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.portfolio:hover::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 181px;
+    top: -56px;
+    left: -2px;
+    background: black;
+}
+.contact {
+    position: absolute;
+    left: calc(1002px + 15px);
+}
+.contact::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 174px;
+    top: 55px;
+    left: 150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.contact:hover::before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 174px;
+    top: 55px;
+    left: -2px;
+    background: black;
+}
+.contact::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 174px;
+    top: -56px;
+    left: -150px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+.contact:hover::after {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 174px;
+    top: -56px;
+    left: -2px;
+    background: black;
+}

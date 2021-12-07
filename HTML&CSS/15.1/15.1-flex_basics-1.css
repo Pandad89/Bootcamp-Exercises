@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background: moccasin;
+    display: flex;
+    height: 40vh;
+    width: 40vw;
+    justify-content: space-between;
+    
+}
+.item1{
+    background: firebrick;
+    width: 100px;
+    height: 100px;
+}
+.item2{
+    background: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+.item3{
+    background: greenyellow;
+    width: 100px;
+    height: 100px;
+}

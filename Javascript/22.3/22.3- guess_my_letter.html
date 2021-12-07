@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Outfit', sans-serif;
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #mystery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 65px;
+            border: 3px black solid;
+            width: 70px;
+            height: 70px;
+        }
+        h1{
+            font-size: 130px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 50px;
+        }
+        button{
+            display: none;
+        }
+        #guesses{
+            display: flex;
+        }
+        input{
+            display: none;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Welcome to Guess the Letter!</h1>
+    <div id="mystery">
+        ?
+    </div>
+    <br><br>
+    <h2>Go ahead! Try guessing!</h2>
+    <br><br>
+    <h3>Guessed letters</h3>
+    <div id="guesses">
+
+    </div>
+    <input type="text">
+    <script src="./app.js"></script>
+<button>Yes</button>
+</body>
+</html>
+
+<!-- HTML -->
+<!--h1 with title of the game-->
+<!--div that creates small box with question mark in it-->
+<!--p element at bottom of page that changes value accoring to guess-->
+<!--h3 that show the guessed keys. changes to ask if you want to play
+    again after game over-->
+<!--grid div that recieves and contains the latest key guess value-->
+<!--button element that resets the game. says yes to the new game question-->
+    

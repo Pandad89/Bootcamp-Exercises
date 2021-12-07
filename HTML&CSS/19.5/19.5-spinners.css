@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: black;
+    height: 100vh;
+}
+.spinner1 {
+    position: relative;
+    background: black;
+    height: 50px;
+    width: 100px;
+}
+.spinner1__ball1 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 7px;
+    animation-name: bounceone;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+}
+.spinner1__ball2 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 37.5px;
+    animation-name: bouncetwo;
+    animation-iteration-count: infinite  ;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+}
+.spinner1__ball3 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: calc(75px - 7px);
+    animation-name: bouncethree;
+    animation-iteration-count: infinite  ;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bounceone {
+    25% {
+        top: 10px; 
+    }
+    75% {
+        top: 30px;
+    }
+}
+@keyframes bouncetwo {
+    25% {
+        top: 10px; 
+    }
+    75% {
+        top: 30px;
+    }
+}
+@keyframes bouncethree {
+    25% {
+        top: 10px; 
+    }
+    75% {
+        top: 30px;
+    }
+}
+
+.spinner2 {
+    position: relative;
+    background: black;
+    height: 50px;
+    width: 100px;
+    left: 100px;
+}
+.spinner2__ball1 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 7px;
+    animation-name: pulseone;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+}
+.spinner2__ball2 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 37.5px;
+    animation-name: pulsetwo;
+    animation-iteration-count: infinite  ;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+}
+.spinner2__ball3 {
+    position: absolute;
+    background: teal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: calc(75px - 7px);
+    animation-name: pulsethree;
+    animation-iteration-count: infinite  ;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes pulseone {
+    0% {
+        background: grey; 
+    }
+
+    75% {
+        background: teal;
+    }
+}
+@keyframes pulsetwo {
+    0% {
+        background: grey; 
+    }
+
+    75% {
+        background: teal;
+    }
+}
+@keyframes pulsethree {
+    0% {
+        background: grey; 
+    }
+
+    75% {
+       background: teal;
+    }
+}
+
+.spinner3 {
+    position: relative;
+    background: black;
+    height: 50px;
+    width: 100px;
+    left: 100px;
+    top: -100px;
+}
+.spinner3__ball1 {
+    position: absolute;
+    background: teal;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    left: 27px;
+    animation-name: spinone;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+}
+.spinner3__ball2 {
+    position: absolute;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    left: 28px;
+}
+@keyframes spinone {
+    0% {
+        top: 10px;
+        left: 27px;
+    }
+    25% {
+        top: 9px;
+        left: 28px;
+    }
+    50% {
+        top: 10px;
+        left: 29px;
+    }
+    75% {
+        top: 11px;
+        left: 28px;
+    }
+    100% {
+        top: 10px;
+        left: 27px;
+    }
+}
+
+
+.spinner4 {
+    position: relative;
+    background: black;
+    height: 50px;
+    width: 100px;
+    left: 0px;
+    top: -100px;
+}
+.spinner4__ball1 {
+    position: absolute;
+    background: lightgray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    left: 28px;
+    overflow: hidden;
+    
+
+}
+.spinner4__ball2 {
+    position: absolute;
+    background: black;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    top: 11px;
+    left: 29px;
+}
+.spinner4__ball1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    animation-name: spintwo;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    position: absolute;
+    background: teal;
+}
+
+@keyframes  spintwo {
+    0% {
+        left: 0px;        
+        top: 0px;
+    }
+    25% {
+        left: 15px;        
+        top: 0px;
+    }
+    50% {
+        left: 15px;        
+        top: 15px;
+    }
+    75% {
+        left: 0px;        
+        top: 15px;
+    }
+    100% {
+        left: 0px;        
+        top: 0px;
+    }
+}

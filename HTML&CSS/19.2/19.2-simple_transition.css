@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background: steelblue;
+    position: relative;
+    
+
+}
+.box::after {
+    position: fixed;
+    content: "";
+    width: 300px;
+    height: 300px;
+    left: 300px;
+    background: firebrick;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+.box:hover::after {
+    background: goldenrod;
+    left: 0px;
+}

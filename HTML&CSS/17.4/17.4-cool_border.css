@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.box {
+    background-color: black;
+    margin: 100px;
+    height: 200px;
+    width: 300px;
+    font-family: sans-serif;
+}
+.box::before {
+    position: absolute;
+    left: 25vw;
+    top: 10vh;
+    content: "[";
+    color: white;
+    font-size: 150px;
+    padding: 20px;
+}
+.box::after {
+    position: absolute;
+    left: 65vw;
+    top: 10vh;
+    content: "]";
+    color: white;
+    font-size: 150px;
+    padding: 20px;
+}
+.box h1 {
+    background-color: black;
+    position: absolute;
+    top: 21vh;
+    width: 300px;
+    height: 7vh;
+    z-index: 1;
+}

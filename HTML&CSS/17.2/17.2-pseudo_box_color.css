@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    background-color: cadetblue;
+    margin: 100px;
+    width: 300px;
+    height: 300px;
+}
+.box::after {
+    background-color: chocolate;
+    position: absolute;
+    left: 250px;
+    content: "";
+    width: 150px;
+    height: 300px;
+}

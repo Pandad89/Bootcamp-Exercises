@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    overflow: hidden;
+}
+.rotate {
+    border: black solid 2px;
+    width: 300px;
+    height: 150px;
+    background: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.rotate::after {
+    position: absolute;
+    content: "Rotate";
+    color: white;
+    width: 150px;
+    height: 300px;
+    left: -150px;
+    top: -300px;
+    background: goldenrod;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.rotate:hover::after {
+    transform: rotate(90deg);
+    width: 150px;
+    height: 300px;
+    left: 75px;
+    top: -75px;
+}
+.translate {
+    border: black solid 2px;
+    width: 300px;
+    height: 150px;
+    background: none;
+    position: relative;
+    top: -134px;
+    left: calc(320px + 20px);
+}
+
+.translate::after {
+    position: absolute;
+    content: "Translate";
+    text-align: right;
+    width: 0px;
+    height: 150px;
+    left: -150px;
+    background: firebrick;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    
+}
+.translate:hover::after {
+    position: absolute;
+    color: white;
+    width: 300px;
+    height: 150px;
+    left: 0px;
+
+}
+.translate-y {
+    border: black solid 2px;
+    width: 300px;
+    height: 150px;
+    background: none;
+    position: relative;
+    left: calc(640px + 20px);
+    top: -288px;
+}
+
+.translate-y::after {
+    position: absolute;
+    content: "Translate Y";
+    text-align: left;
+    width: 300px;
+    height: 0px;
+    left: 0px;
+    top: -165px;
+    background: steelblue;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.translate-y:hover::after {
+    transform: translate(0, 100px);
+    color: white;
+    width: 300px;
+    height: 150px;
+    left: 0px;
+    top: -100px;
+
+}
+.scale-opacity {
+    border: black solid 2px;
+    width: 300px;
+    height: 150px;
+    background: none;
+    position: relative;
+    left: calc(960px + 20px);
+    top: -442px;
+}
+
+.scale-opacity::after {
+    position: absolute;
+    content: "Scale & Opacity";
+    text-align: center;
+    color: white;
+    width: 300px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    transform: scale(2);
+
+    
+}
+.scale-opacity:hover::after {
+
+    width: 300px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 1);
+    transform: scale(1);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Header</h1>
+        <p>Paragraph</p>
+        <a href="#">link</a>
+        <img src="" alt="" />
+        <div class="x">Div with a class</div>
+        <div id="y">Div with an id</div>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+    </body>
+    <script>
+        //1
+        const header = document.getElementsByTagName("h1");
+        const paragraph = document.getElementsByTagName("p");
+        const link = document.getElementsByTagName("a");
+        const image = document.getElementsByTagName("img");
+        const divWithClass = document.getElementsByClassName("x");
+        const divWithId = document.getElementById("y");
+        const input = document.getElementsByTagName("input");
+        console.log(header);
+        console.log(paragraph);
+        console.log(link);
+        console.log(image);
+        console.log(divWithClass);
+        console.log(divWithId);
+        console.log(input);
+        //2
+        const headerQuery = document.querySelector("h1");
+        const paragraphQuery = document.querySelector("p");
+        const linkQuery = document.querySelector("a");
+        const ImageQuery = document.querySelector("img");
+        const divWithClassQuery = document.querySelector(".x");
+        const divWithIdQuery = document.querySelector("#y");
+        const inputQuery = document.querySelector("input");
+        console.log(headerQuery);
+        console.log(paragraphQuery);
+        console.log(linkQuery);
+        console.log(ImageQuery);
+        console.log(divWithClassQuery); 
+        console.log(divWithIdQuery);
+        console.log(inputQuery);
+        //3 getElementsByTagName
+
+        // 3 querySelector
+        
+    </script>
+    </html
