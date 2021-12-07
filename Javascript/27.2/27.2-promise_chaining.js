@@ -12,15 +12,16 @@ function makeAllCaps(arr) {
         }
     })
 }
-makeAllCaps(['hello', 'goodbye', 'why', 'whereabouts', 'window', 'enjoy', 'little', 'eighty', 'nine']).then((capsArr) => {
-    console.log(capsArr);
+function sortWords(arr) {
+    return arr.sort();
+}
+const arrOne = ['hello', 'goodbye', 'why', 'whereabouts', 'window', 'enjoy', 'little', 'eighty', 'nine'];
+const arrTwo = ['hello', 'goodbye', 'why', 'whereabouts', 'window', 'enjoy', 'little', 'eighty', true];
+
+makeAllCaps(arrTwo).then((capsArr) => {
+    return sortWords(capsArr);
+}).then((sortedCapsArr) => {
+    console.log(sortedCapsArr);
 }).catch((errMessage) => {
     console.log(errMessage)
 })
-
-// makeAllCaps(['hello', 'goodbye', 'why', 'whereabouts', 1, 'enjoy', 'nineteen', 'eighty', 'nine']);
-
-
-// function sortWords (arr) {
-
-// }
