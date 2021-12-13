@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  height: 100vh;
+}
+.Buttons {
+  display: flex;
+  gap: 1.5rem;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.FirstButton {
+  font-weight: bold;
+}
+
