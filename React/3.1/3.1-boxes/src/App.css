@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+.Box1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
+  padding: 4rem;
+}
+.Box2 {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  padding: 4rem;
+}
+.Box3 {
+  height: 100%;
+  width: 100%;
+  background-color: firebrick;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.Box4 {
+  height: 100%;
+  width: 100%;
+  background-color: violet;
+  
+}
