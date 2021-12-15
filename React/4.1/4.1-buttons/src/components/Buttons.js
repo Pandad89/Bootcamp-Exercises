@@ -1,14 +1,9 @@
 import React from "react";
 
-const Buttons = () => {
+const Buttons = (props) => {
     return (
         <div className="Buttons">
-            <button className="FirstButton">
-                Important
-            </button>
-            <button className="SecondButton">
-                Not Important
-            </button>
+            {props.text}
         </div>
     )
 }

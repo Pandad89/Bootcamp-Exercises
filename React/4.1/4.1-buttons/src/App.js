@@ -1,10 +1,11 @@
 import './App.css';
 import Buttons from './components/Buttons';
 
-function App() {
+ function App(){
   return (
     <div className="App">
-      <Buttons />
+      <Buttons text="Important" className="Bold"/>
+      <Buttons text="Not Important"/>
     </div>
   );
 }
