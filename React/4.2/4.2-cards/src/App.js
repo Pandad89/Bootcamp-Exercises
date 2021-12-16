@@ -1,12 +1,30 @@
 import './App.css';
-import Card from './components/Cards';
+import Card from './components/Card/Card';
 
 function App() {
   return (
     <div className="App">
-      <Card title="Title 1" />
-      <Card subtitle ="Subtitle 1"/>
-      <Card text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat"/>
+      <Card 
+      Image='https://tinyurl.com/yvaan9xa' 
+      Title='Space Title' 
+      Description='Space Description'
+      LinkText1='Space Link 1'
+      LinkText2='Space Link 2'
+      />
+      <Card 
+      Image='https://tinyurl.com/4n79nvt2' 
+      Title='Desert Title' 
+      Description='Desert Description'
+      LinkText1='Desert Link 1'
+      LinkText2='Desert Link 2'
+      />
+      <Card 
+      Image='https://tinyurl.com/4t5phyd2' 
+      Title='Ocean Title' 
+      Description='Ocean Description'
+      LinkText1='Ocean Link 1'
+      LinkText2='Ocean Link 2'
+      />
     </div>
   );
 }
