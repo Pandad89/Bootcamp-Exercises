@@ -1,11 +1,9 @@
 import React from "react";
 
-const Title = () => {
+const QuizTitle = () => {
     return (
-        <div className="Title">
-
-        </div>
+        <h1>How do you like frontend?</h1>
     );
-}
+};
 
-export default Title;
+export default QuizTitle;

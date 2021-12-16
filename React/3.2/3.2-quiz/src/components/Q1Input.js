@@ -2,10 +2,8 @@ import React from "react";
 
 const Q1Input = () => {
     return (
-        <div className="Q1Input">
-
-        </div>
+        <input type="range"></input>
     );
-}
+};
 
 export default Q1Input;

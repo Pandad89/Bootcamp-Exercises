@@ -3,7 +3,7 @@ import React from "react";
 const Buttons = (props) => {
     return (
         <div className="Buttons">
-            {props.text}
+            <button style={{fontWeight: props.font}}>{props.text}</button>
         </div>
     )
 }

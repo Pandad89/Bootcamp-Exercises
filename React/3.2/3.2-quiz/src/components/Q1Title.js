@@ -2,10 +2,8 @@ import React from "react";
 
 const Q1Title = () => {
     return (
-        <div className="Q1Title">
-
-        </div>
+        <h3>How much do you love frontend?</h3>
     );
-}
+};
 
 export default Q1Title;

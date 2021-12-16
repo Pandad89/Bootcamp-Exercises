@@ -1,5 +1,5 @@
 import './App.css';
-import './components/Quiz.js';
+import Quiz from './components/Quiz';
 
 function App() {
   return (
