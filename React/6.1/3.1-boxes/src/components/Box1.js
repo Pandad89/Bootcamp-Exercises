@@ -1,12 +1,10 @@
 import React from "react";
 import Box2 from "./Box2";
 
-const Box1 = () => {
-    return (
-        <div className="Box1">
-            <Box2 />
-        </div>
-    );
+class Box1 extends React.Component {
+    render(){
+        return <Box2 />
+    }
 }
 
 export default Box1;

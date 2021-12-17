@@ -1,11 +1,13 @@
 import React from "react";
 
-const Link = (props) => {
-    return (
-        <div>
-            <a href={props.LinkDestination}>{props.LinkText}</a>
-        </div>
-    );
-};
+class Link extends React.Component {
+    render(props) {
+        return (
+            <div>
+                <a href={props.LinkDestination}>{props.LinkText}</a>
+            </div>
+        )
+    }
+}
 
 export default Link;
