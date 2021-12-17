@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+.Card {
+  box-shadow: 0px 10px 20px grey;
+}
+.App {
+  display: flex;
+  gap: 4rem;
+}
+
+.Links {
+  display: flex;
+  gap: 2rem;
+}
