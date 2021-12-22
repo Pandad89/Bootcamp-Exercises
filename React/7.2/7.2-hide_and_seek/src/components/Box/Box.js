@@ -6,18 +6,19 @@ class Box extends React.Component {
         super(props);
 
         this.state = {
-            Color: 'blueviolet'
+            Color: 'white',
+            Background: 'white'
         }
     }
 
     clickHandler = () => {
-        this.setState({Color: this.state.Color === 'blueviolet' ? 'yellow' : 'blueviolet'});
+        this.setState({Background: this.state.Background === 'white' ? 'black' : 'white'});
     };
 
     render(){
         return(
             <div>
-                <div style={this.state.Color} className='Box'></div>
+                <div style={{background: this.state.Background, color: this.state.Color}} className='Box'>Oh, Hello There!</div>
                 <button onClick={this.clickHandler}>Click</button>
             </div>
         )
