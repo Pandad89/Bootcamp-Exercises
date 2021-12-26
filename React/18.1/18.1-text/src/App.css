@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.readMore {
+  color: blue;
+}
+.readMore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
