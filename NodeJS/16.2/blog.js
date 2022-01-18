@@ -16,12 +16,12 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
         {
             "_id:": id,
             "name": "DeepSpaceKraken3k",
-            "email": "NoFunForYou"
+            "email": "NoFunForYou@fakemail.com"
         },
         {
             "_id:": id,
             "name": "DopefishLives",
-            "email": "UltraNightmare"
+            "email": "UltraNightmare@fakemail.com"
         }
     ])
     db.collection('posts').insertMany([
