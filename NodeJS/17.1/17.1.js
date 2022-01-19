@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator')
 
-mongoose.connect('mongodb://127.0.0.1:27017', {})
+mongoose.connect('mongodb://127.0.0.1:27017/products', {})
 
 const Product = mongoose.model('Product', {
     name: {
